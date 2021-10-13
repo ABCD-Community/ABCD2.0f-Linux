@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then
+  ARCH=""
+else
+  ARCH="-a ${1}"
+fi
+
+if which fpm >/dev/null
+then
+  fpm -n ABCD -t deb -s dir -x "**/.git/**" -x .gitignore --post-install postinstall -d php7.0-gd -d php7.0-xml -v 2.1b --prefix /opt -C ../.. $ARCH ABCD
+else
+  echo fpm not in installed or not in path.
+  exit 1
+fi

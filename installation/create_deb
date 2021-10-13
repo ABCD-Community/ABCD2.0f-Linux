@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then
+  ARCH=""
+else
+  ARCH="${1}"
+fi
+
+if which fpm >/dev/null
+then
+#  fpm -f -n ABCD -t deb -s dir -x "**/.git/**" -x .gitignore --post-install postinstall -v 2.2b --prefix /opt -C ../.. -a $ARCH ABCD
+  fpm -f -n ABCD -t deb -s dir -x "**/.git/**" -x .gitignore -x "*.deb" --post-install postinstall -v 2.2b --prefix /opt -C ../.. -a $ARCH -d 'libapache2-mod-php' -d 'php-mbstring (>=7.0)' -d 'php-xml (>=7.0)' ABCD
+#  echo "Please make sure you have the following PHP-dependencies installed : libapache2-mod-php, php7.x-mbstring, php7.x-gd and php7.x-xml (replace x y your PHP 7 version number)."
+#  -d libapache2-mod-php -d php-mbstring (>=php7.0)-d php-gd (>=7.0) -d php-xml (>=7.0)
+else
+  echo fpm not in installed or not in path.
+  exit 1
+fi

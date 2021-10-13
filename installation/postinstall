@@ -1,0 +1,40 @@
+#!/bin/bash
+
+set -e
+
+if ! [ -e /var/opt/ABCD/bases ]
+then
+	BASEDIR=/var/opt/ABCD/bases
+else 
+	BASEDIR=/var/opt/ABCD/bases_added
+#	mv /var/opt/ABCD/bases /var/opt/ABCD/bases_backup
+fi
+
+mkdir -p $BASEDIR
+chown -R www-data:www-data /var/opt/ABCD
+chmod -R 777 /var/opt/ABCD
+cp -r /opt/ABCD/www/bases_added/* $BASEDIR/
+
+#rm -rf bases_examples
+
+#chown -R apache:apache /opt/ABCD/www/temp
+chmod -R 755 /opt/ABCD/www/cgi-bin
+chmod -R 775 /opt/ABCD/www/htdocs
+chmod -R 777 /opt/ABCD/www/htdocs/bases
+#chmod -R 777 /opt/ABCD/empweb/db
+
+
+ln -sf /var/opt/ABCD/bases /opt/ABCD/www/
+
+if [ -e /var/opt/ABCD/bases/abcd.def ]
+then
+        cp -b /var/opt/ABCD/bases/abcd.def /var/opt/ABCD/bases/abcd.def.bkp
+fi
+
+if [ -e /opt/ABCD/bases/abcd.def ]
+then
+        cp -b /opt/ABCD/www/bases_examples/abcd.def /var/opt/ABCD/bases/abcd.def
+fi
+echo "Please make sure you have the following PHP-dependencies installed : libapache2-mod-php, php7.x-mbstring, php7.x-gd and php7.x-xml (replace x y your PHP 7 version number)."
+
+echo "ABCD successfully installed - please check configuration files and bases-folders in /var/opt/ABCD... and it is always a good idea to read the documentation!"

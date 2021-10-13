@@ -1,0 +1,21 @@
+PHP.INI variables to be checked for ABCD Digital Library :
+(Note : 25M is the max. limit of TIKA)
+
+post_max_size = 25M 
+upload_max_filesize = 25M   
+
+document repository (structured into subfolders) to be put into [directory referred to in 'COLLECTION' parameter of dr_path.def]/ABCDImportRepo.
+after import the processed documents will be moved, preserving the folder-structure, into [directory referred to in 'COLLECTION' parameter of dr_path.def]. E.g. : COLLECTION=/var/opt/ABCD/bases/dubcore/collection/
+If this directory is outside your Apache domain (i.e. /opt/ABCD/www/htdocs) then create an 'alias' in Apache's virtual host configuration and use the alias in your PFT's for displaying the full-text.
+E.g.
+	Alias /collection/ "/var/opt/ABCD/bases/collections/"
+	<Directory "/var/opt/ABCD/bases/collections/">
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		#Following line only allows from local IP-ranges :
+      		#Require ip 10 172.20 192.168.2
+		Require all granted
+	</Directory>
+
+
+With the 'batch import' tool a fullinverted file generation is obvious (we use the /m parameter to only index the MFN's without the field-related proximity postings), while with the interactive document import feature in principle an 'incremental' indexing with 'ifupd=' should be used. In this 2nd case use the default database FST will be used, in the case of the full-text indexing from the utilities-menu select the 'fulltext.fst' option.

@@ -1,0 +1,27 @@
+ABCD Linux 64 bits Version
+=====
+ABCD is the acronym for a software suite for the automation of libraries and documentation centres. In Spanish this is, in full : 'Automatisación de Bibliotécas y Centros de Documentación', which keeps the same acronym valid also for French (Automation des Bibliothèques et Centres de Documentacion) or Portugese (Automatização das Bibliotecas e dos Centros de Documentação). Even in other non-latin languages, with some slight but quite acceptable variations, - e.g. Dutch : 'Automatisering van Bibliotheken en Centra voor Documentatie' - the acronym can still be maintained.
+
+The name itself already expresses the ambition of the software suite : not only providing automation functions for the 'classic' libraries but also other information providers such as documentation centres. Flexibility and versatility are at the forefront of the criteria on which the software is developed. This flexibility e.g. is illustrated by the fact that in principle, but also practically, any bibliographic structure can be managed by the software, or even created by itself. Even non-bibliographic structures can be created, as long as the information is mainly 'textual' information, as this is the limitation put by the underlying database technology, which is the (CDS/)ISIS textual database.
+
+NEW in v2.0b : [at this time most features only configured for English language only]
+- different CISIS-versions can be used (as subfolders of cgi-bin), e.g. bigisis, ffi, 1660utf8
+- full-text handling : a database can now be created using the docbatchimport script (in utilities), adding all documents in 'ABCDImportRepo' directory (in the 'collection' directory defined in dr_path.def for that database) into the database with automatic display of text-contents and creation of URL/link
+- UTF8-compatible databases can now be created using the dedicated utf8-CISIS version, e.g. 1660utf8, see the 'unicode' demo-database; however change the charset variable in php.ini to 'utf-8' for this to display correctly
+- based on the UTF8 Unicode capability now an Amharic (Ethiopian) version is available and added as 5th language (am)
+- highlighting of search-keys in record display
+- protecting fields with URL's to full-text by either IP-range or login-mechanism
+- ODDS Online Document Delivery Service module added (to be configured+tested)
+- OAI module re-designed (to be configured+tested)
+- duplication check when adding copies and new method of 'sending to loanobjects'
+- lots of new utilities  (barcode check, addcopies, compactdb...)
+- ... many more smaller additions based on Central 1.5, e.g. thesaurus-module
+
+
+GENERAL ADVICE ON UPDATING : 
+
+- rename your existing ABCD-folder
+- install the new ABCD (in Debian : dpkg -i abcd_2.0b_amd64.deb)
+- copy the database folders/files from your previous ABCD into the new one, overwriting the existing ones but not removing the new files there (e.g. 'stock2.pft' in copies/pfts/en
+- adjust the bases.dat, abcd.def and the par-folder (for .par and .def files), knowing that the ABCD Debian installation package will copy all demo-databases to the bases-folder of ABCD while the existing databases are moved to 'bases_backup' in /var/opt/ABCD. So basically the idea is to 'merge' your database directories from the bases_backup with the new demo-directories in var/opt/bases, adding the new ones and preserving the ones already in use.
+- remember to set all htdocs directories to 775 and all bases-directories to 777

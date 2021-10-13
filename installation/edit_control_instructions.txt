@@ -1,0 +1,7 @@
+mkdir tmp
+cd tmp
+ar p ../original.deb control.tar.gz | tar -xz
+# edit postinst
+cp ../original.deb ../fixed.deb
+tar czf control.tar.gz *[!z]
+ar r ../fixed.deb control.tar.gz

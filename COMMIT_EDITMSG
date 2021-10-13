@@ -1,0 +1,460 @@
+Compatibility for PHP7.1 (function names cannot be equal to class names etc.), iAH and Site configurations automatically adjusting for Windows/Linux, Smarty updated. 
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+	modified:   www/bases-examples_Linux/marc/pfts/en/call_export_EndNote.pft
+	new file:   www/bases-examples_Linux/marc/pfts/en/export_Endnote.pft
+	modified:   www/bases-examples_Linux/marc/pfts/en/shortcut.pft
+#	modified:   www/htdocs/central/availability.php
+#	modified:   www/htdocs/central/config.php
+#	modified:   www/htdocs/central/dataentry/menu_main.php
+#	modified:   www/htdocs/central/homepagemysite.php
+#	modified:   www/htdocs/central/iniciomysite.php
+#	new file:   www/htdocs/iah/am/help/help_form_lilacs.htm
+#	new file:   www/htdocs/iah/am/help/help_form_secs.htm
+#	new file:   www/htdocs/iah/am/help/help_index_word.html
+#	new file:   www/htdocs/iah/am/help/note_form_lilacs.htm
+#	new file:   www/htdocs/iah/am/help/note_index_word.html
+#	new file:   www/htdocs/iah/am/image/0.gif
+#	new file:   www/htdocs/iah/am/image/0red.gif
+#	new file:   www/htdocs/iah/am/image/1.gif
+#	new file:   www/htdocs/iah/am/image/1red.gif
+#	new file:   www/htdocs/iah/am/image/2.gif
+#	new file:   www/htdocs/iah/am/image/2red.gif
+#	new file:   www/htdocs/iah/am/image/3.gif
+#	new file:   www/htdocs/iah/am/image/3red.gif
+#	new file:   www/htdocs/iah/am/image/4.gif
+#	new file:   www/htdocs/iah/am/image/4red.gif
+#	new file:   www/htdocs/iah/am/image/5.gif
+#	new file:   www/htdocs/iah/am/image/5red.gif
+#	new file:   www/htdocs/iah/am/image/6.gif
+#	new file:   www/htdocs/iah/am/image/6red.gif
+#	new file:   www/htdocs/iah/am/image/7.gif
+#	new file:   www/htdocs/iah/am/image/7red.gif
+#	new file:   www/htdocs/iah/am/image/8.gif
+#	new file:   www/htdocs/iah/am/image/8red.gif
+#	new file:   www/htdocs/iah/am/image/9.gif
+#	new file:   www/htdocs/iah/am/image/9red.gif
+#	new file:   www/htdocs/iah/am/image/Thumbs.db
+#	new file:   www/htdocs/iah/am/image/arrow.gif
+#	new file:   www/htdocs/iah/am/image/audio.gif
+#	new file:   www/htdocs/iah/am/image/banner.jpg
+#	new file:   www/htdocs/iah/am/image/bannerODDS.jpg
+#	new file:   www/htdocs/iah/am/image/bannerODDS.png
+#	new file:   www/htdocs/iah/am/image/bannerODDS.xcf
+#	new file:   www/htdocs/iah/am/image/bot.gif
+#	new file:   www/htdocs/iah/am/image/bott.gif
+#	new file:   www/htdocs/iah/am/image/bottoff.gif
+#	new file:   www/htdocs/iah/am/image/bvs.gif
+#	new file:   www/htdocs/iah/am/image/facic.gif
+#	new file:   www/htdocs/iah/am/image/first.gif
+#	new file:   www/htdocs/iah/am/image/firstoff.gif
+#	new file:   www/htdocs/iah/am/image/fulltxt.gif
+#	new file:   www/htdocs/iah/am/image/fundo.gif
+#	new file:   www/htdocs/iah/am/image/head2.gif
+#	new file:   www/htdocs/iah/am/image/indice.gif
+#	new file:   www/htdocs/iah/am/image/last.gif
+#	new file:   www/htdocs/iah/am/image/lastoff.gif
+#	new file:   www/htdocs/iah/am/image/left.gif
+#	new file:   www/htdocs/iah/am/image/leftoff.gif
+#	copied:     www/htdocs/iah/en/image/logoabcd.jpg -> www/htdocs/iah/am/image/logoODDS.gif
+#	new file:   www/htdocs/iah/am/image/logoabcd.jpg
+#	new file:   www/htdocs/iah/am/image/logobvs.gif
+#	new file:   www/htdocs/iah/am/image/new.gif
+#	new file:   www/htdocs/iah/am/image/next.gif
+#	new file:   www/htdocs/iah/am/image/nextoff.gif
+#	new file:   www/htdocs/iah/am/image/prev.gif
+#	new file:   www/htdocs/iah/am/image/prevoff.gif
+#	new file:   www/htdocs/iah/am/image/print.gif
+#	new file:   www/htdocs/iah/am/image/radio.gif
+#	new file:   www/htdocs/iah/am/image/refine.gif
+#	new file:   www/htdocs/iah/am/image/related.gif
+#	new file:   www/htdocs/iah/am/image/right.gif
+#	new file:   www/htdocs/iah/am/image/rightoff.gif
+#	new file:   www/htdocs/iah/am/image/rss.gif
+#	new file:   www/htdocs/iah/am/image/scad.gif
+#	new file:   www/htdocs/iah/am/image/scielo.gif
+#	new file:   www/htdocs/iah/am/image/selo.gif
+#	new file:   www/htdocs/iah/am/image/seta.gif
+#	new file:   www/htdocs/iah/am/image/top.gif
+#	new file:   www/htdocs/iah/am/image/topoff.gif
+#	new file:   www/htdocs/iah/am/image/toprint.gif
+#	new file:   www/htdocs/iah/am/image/visual.gif
+#	new file:   www/htdocs/iah/am/index.htm
+#	new file:   www/htdocs/iah/am/index.php
+	modified:   www/htdocs/iah/css/general.css
+	modified:   www/htdocs/iah/css/layout.css
+	modified:   www/htdocs/iah/css/styles.css
+#	new file:   www/htdocs/iah/du/help/help_form_lilacs.htm
+#	new file:   www/htdocs/iah/du/help/help_form_secs.htm
+#	new file:   www/htdocs/iah/du/help/help_index_word.html
+#	new file:   www/htdocs/iah/du/help/note_form_lilacs.htm
+#	new file:   www/htdocs/iah/du/help/note_index_word.html
+#	new file:   www/htdocs/iah/du/image/0.gif
+#	new file:   www/htdocs/iah/du/image/0red.gif
+#	new file:   www/htdocs/iah/du/image/1.gif
+#	new file:   www/htdocs/iah/du/image/1red.gif
+#	new file:   www/htdocs/iah/du/image/2.gif
+#	new file:   www/htdocs/iah/du/image/2red.gif
+#	new file:   www/htdocs/iah/du/image/3.gif
+#	new file:   www/htdocs/iah/du/image/3red.gif
+#	new file:   www/htdocs/iah/du/image/4.gif
+#	new file:   www/htdocs/iah/du/image/4red.gif
+#	new file:   www/htdocs/iah/du/image/5.gif
+#	new file:   www/htdocs/iah/du/image/5red.gif
+#	new file:   www/htdocs/iah/du/image/6.gif
+#	new file:   www/htdocs/iah/du/image/6red.gif
+#	new file:   www/htdocs/iah/du/image/7.gif
+#	new file:   www/htdocs/iah/du/image/7red.gif
+#	new file:   www/htdocs/iah/du/image/8.gif
+#	new file:   www/htdocs/iah/du/image/8red.gif
+#	new file:   www/htdocs/iah/du/image/9.gif
+#	new file:   www/htdocs/iah/du/image/9red.gif
+#	new file:   www/htdocs/iah/du/image/Thumbs.db
+#	new file:   www/htdocs/iah/du/image/arrow.gif
+#	new file:   www/htdocs/iah/du/image/audio.gif
+#	new file:   www/htdocs/iah/du/image/banner.jpg
+#	new file:   www/htdocs/iah/du/image/bannerODDS.jpg
+#	new file:   www/htdocs/iah/du/image/bannerODDS.png
+#	new file:   www/htdocs/iah/du/image/bannerODDS.xcf
+#	new file:   www/htdocs/iah/du/image/bot.gif
+#	new file:   www/htdocs/iah/du/image/bott.gif
+#	new file:   www/htdocs/iah/du/image/bottoff.gif
+#	new file:   www/htdocs/iah/du/image/bvs.gif
+#	new file:   www/htdocs/iah/du/image/facic.gif
+#	new file:   www/htdocs/iah/du/image/first.gif
+#	new file:   www/htdocs/iah/du/image/firstoff.gif
+#	new file:   www/htdocs/iah/du/image/fulltxt.gif
+#	new file:   www/htdocs/iah/du/image/fundo.gif
+#	new file:   www/htdocs/iah/du/image/head2.gif
+#	new file:   www/htdocs/iah/du/image/indice.gif
+#	new file:   www/htdocs/iah/du/image/last.gif
+#	new file:   www/htdocs/iah/du/image/lastoff.gif
+#	new file:   www/htdocs/iah/du/image/left.gif
+#	new file:   www/htdocs/iah/du/image/leftoff.gif
+#	new file:   www/htdocs/iah/du/image/logoODDS.gif
+#	new file:   www/htdocs/iah/du/image/logoabcd.jpg
+#	new file:   www/htdocs/iah/du/image/logobvs.gif
+#	new file:   www/htdocs/iah/du/image/new.gif
+#	new file:   www/htdocs/iah/du/image/next.gif
+#	new file:   www/htdocs/iah/du/image/nextoff.gif
+#	new file:   www/htdocs/iah/du/image/prev.gif
+#	new file:   www/htdocs/iah/du/image/prevoff.gif
+#	new file:   www/htdocs/iah/du/image/print.gif
+#	new file:   www/htdocs/iah/du/image/radio.gif
+#	new file:   www/htdocs/iah/du/image/refine.gif
+#	new file:   www/htdocs/iah/du/image/related.gif
+#	new file:   www/htdocs/iah/du/image/right.gif
+#	new file:   www/htdocs/iah/du/image/rightoff.gif
+#	new file:   www/htdocs/iah/du/image/rss.gif
+#	new file:   www/htdocs/iah/du/image/scad.gif
+#	new file:   www/htdocs/iah/du/image/scielo.gif
+#	new file:   www/htdocs/iah/du/image/selo.gif
+#	new file:   www/htdocs/iah/du/image/seta.gif
+#	new file:   www/htdocs/iah/du/image/top.gif
+#	new file:   www/htdocs/iah/du/image/topoff.gif
+#	new file:   www/htdocs/iah/du/image/toprint.gif
+#	new file:   www/htdocs/iah/du/image/visual.gif
+#	new file:   www/htdocs/iah/du/index.htm
+#	new file:   www/htdocs/iah/du/index.php
+#	modified:   www/htdocs/iah/en/help/help_index_word.html
+#	modified:   www/htdocs/iah/en/help/note_form_lilacs.htm
+#	modified:   www/htdocs/iah/en/help/note_index_word.html
+#	new file:   www/htdocs/iah/en/image/Ueberleben_logo.jpg
+#	new file:   www/htdocs/iah/en/image/banner.jpg
+#	new file:   www/htdocs/iah/en/image/bannerODDS.jpg
+#	new file:   www/htdocs/iah/en/image/bannerODDS.png
+#	new file:   www/htdocs/iah/en/image/bannerODDS.xcf
+#	new file:   www/htdocs/iah/en/image/logoODDS.gif
+#	modified:   www/htdocs/iah/en/image/logoabcd.jpg
+#	new file:   www/htdocs/iah/en/image/logoabcd.jpg.ori
+#	modified:   www/htdocs/iah/en/index.htm
+#	new file:   www/htdocs/iah/en/index.php
+#	modified:   www/htdocs/iah/es/help/ayuda.html
+#	new file:   www/htdocs/iah/fr/en/help/help_form_lilacs.htm
+#	new file:   www/htdocs/iah/fr/en/help/help_form_secs.htm
+#	new file:   www/htdocs/iah/fr/en/help/help_index_word.html
+#	new file:   www/htdocs/iah/fr/en/help/note_form_lilacs.htm
+#	new file:   www/htdocs/iah/fr/en/help/note_index_word.html
+#	new file:   www/htdocs/iah/fr/en/image/0.gif
+#	new file:   www/htdocs/iah/fr/en/image/0red.gif
+#	new file:   www/htdocs/iah/fr/en/image/1.gif
+#	new file:   www/htdocs/iah/fr/en/image/1red.gif
+#	new file:   www/htdocs/iah/fr/en/image/2.gif
+#	new file:   www/htdocs/iah/fr/en/image/2red.gif
+#	new file:   www/htdocs/iah/fr/en/image/3.gif
+#	new file:   www/htdocs/iah/fr/en/image/3red.gif
+#	new file:   www/htdocs/iah/fr/en/image/4.gif
+#	new file:   www/htdocs/iah/fr/en/image/4red.gif
+#	new file:   www/htdocs/iah/fr/en/image/5.gif
+#	new file:   www/htdocs/iah/fr/en/image/5red.gif
+#	new file:   www/htdocs/iah/fr/en/image/6.gif
+#	new file:   www/htdocs/iah/fr/en/image/6red.gif
+#	new file:   www/htdocs/iah/fr/en/image/7.gif
+#	new file:   www/htdocs/iah/fr/en/image/7red.gif
+#	new file:   www/htdocs/iah/fr/en/image/8.gif
+#	new file:   www/htdocs/iah/fr/en/image/8red.gif
+#	new file:   www/htdocs/iah/fr/en/image/9.gif
+#	new file:   www/htdocs/iah/fr/en/image/9red.gif
+#	new file:   www/htdocs/iah/fr/en/image/Thumbs.db
+#	new file:   www/htdocs/iah/fr/en/image/arrow.gif
+#	new file:   www/htdocs/iah/fr/en/image/audio.gif
+#	new file:   www/htdocs/iah/fr/en/image/bot.gif
+#	new file:   www/htdocs/iah/fr/en/image/bott.gif
+#	new file:   www/htdocs/iah/fr/en/image/bottoff.gif
+#	new file:   www/htdocs/iah/fr/en/image/bvs.gif
+#	new file:   www/htdocs/iah/fr/en/image/facic.gif
+#	new file:   www/htdocs/iah/fr/en/image/first.gif
+#	new file:   www/htdocs/iah/fr/en/image/firstoff.gif
+#	new file:   www/htdocs/iah/fr/en/image/fulltxt.gif
+#	new file:   www/htdocs/iah/fr/en/image/fundo.gif
+#	new file:   www/htdocs/iah/fr/en/image/head2.gif
+#	new file:   www/htdocs/iah/fr/en/image/indice.gif
+#	new file:   www/htdocs/iah/fr/en/image/last.gif
+#	new file:   www/htdocs/iah/fr/en/image/lastoff.gif
+#	new file:   www/htdocs/iah/fr/en/image/left.gif
+#	new file:   www/htdocs/iah/fr/en/image/leftoff.gif
+#	new file:   www/htdocs/iah/fr/en/image/logoabcd.jpg
+#	new file:   www/htdocs/iah/fr/en/image/logobvs.gif
+#	new file:   www/htdocs/iah/fr/en/image/new.gif
+#	new file:   www/htdocs/iah/fr/en/image/next.gif
+#	new file:   www/htdocs/iah/fr/en/image/nextoff.gif
+#	new file:   www/htdocs/iah/fr/en/image/prev.gif
+#	new file:   www/htdocs/iah/fr/en/image/prevoff.gif
+#	new file:   www/htdocs/iah/fr/en/image/print.gif
+#	new file:   www/htdocs/iah/fr/en/image/radio.gif
+#	new file:   www/htdocs/iah/fr/en/image/refine.gif
+#	new file:   www/htdocs/iah/fr/en/image/related.gif
+#	new file:   www/htdocs/iah/fr/en/image/right.gif
+#	new file:   www/htdocs/iah/fr/en/image/rightoff.gif
+#	new file:   www/htdocs/iah/fr/en/image/rss.gif
+#	new file:   www/htdocs/iah/fr/en/image/scad.gif
+#	new file:   www/htdocs/iah/fr/en/image/scielo.gif
+#	new file:   www/htdocs/iah/fr/en/image/selo.gif
+#	new file:   www/htdocs/iah/fr/en/image/seta.gif
+#	new file:   www/htdocs/iah/fr/en/image/top.gif
+#	new file:   www/htdocs/iah/fr/en/image/topoff.gif
+#	new file:   www/htdocs/iah/fr/en/image/toprint.gif
+#	new file:   www/htdocs/iah/fr/en/image/visual.gif
+#	new file:   www/htdocs/iah/fr/en/index.htm
+	modified:   www/htdocs/iah/index.php
+#	new file:   www/htdocs/iah/index.php.od
+#	new file:   www/htdocs/iah/js/.Rhistory
+#	new file:   www/htdocs/iah/js/highlight
+#	new file:   www/htdocs/iah/js/highlight2.js
+#	new file:   www/htdocs/iah/scripts/am/ahbbot.htm
+#	new file:   www/htdocs/iah/scripts/am/ahbnav.htm
+#	new file:   www/htdocs/iah/scripts/am/ahbtop.htm
+#	new file:   www/htdocs/iah/scripts/am/ahconf.htm
+#	new file:   www/htdocs/iah/scripts/am/ahemail.pft
+#	new file:   www/htdocs/iah/scripts/am/ahfoot.pft
+#	new file:   www/htdocs/iah/scripts/am/ahform.htm
+#	new file:   www/htdocs/iah/scripts/am/ahhead.pft
+#	new file:   www/htdocs/iah/scripts/am/ahhidd.pft
+#	new file:   www/htdocs/iah/scripts/am/ahindx.htm
+#	new file:   www/htdocs/iah/scripts/am/ahindx1.htm
+#	new file:   www/htdocs/iah/scripts/am/ahindx2.htm
+#	new file:   www/htdocs/iah/scripts/am/ahlist.pft
+#	new file:   www/htdocs/iah/scripts/am/ahrbot.htm
+#	new file:   www/htdocs/iah/scripts/am/ahrnav.htm
+#	new file:   www/htdocs/iah/scripts/am/ahrtop.htm
+#	new file:   www/htdocs/iah/scripts/am/ahscad.htm
+#	new file:   www/htdocs/iah/scripts/am/ahsend.htm
+#	new file:   www/htdocs/iah/scripts/am/cabec.htm
+#	new file:   www/htdocs/iah/scripts/am/dumy.pft
+#	new file:   www/htdocs/iah/scripts/am/header.pft
+#	new file:   www/htdocs/iah/scripts/am/header_close.pft
+#	new file:   www/htdocs/iah/scripts/am/headerfacic.pft
+#	new file:   www/htdocs/iah/scripts/am/lfacic.pft
+#	new file:   www/htdocs/iah/scripts/am/list6003.pft
+#	new file:   www/htdocs/iah/scripts/am/lista.pft
+#	new file:   www/htdocs/iah/scripts/am/mfacic.pft
+#	new file:   www/htdocs/iah/scripts/am/mostra.pft
+#	new file:   www/htdocs/iah/scripts/am/navpage.pft
+#	new file:   www/htdocs/iah/scripts/am/query.pft
+#	new file:   www/htdocs/iah/scripts/am/troca1.pft
+#	new file:   www/htdocs/iah/scripts/am/troca2.pft
+#	new file:   www/htdocs/iah/scripts/am/xmlhead.pft
+	modified:   www/htdocs/iah/scripts/busca_facic.xis
+#	new file:   www/htdocs/iah/scripts/buscar.xis
+	modified:   www/htdocs/iah/scripts/citar.xis
+	modified:   www/htdocs/iah/scripts/du/ahhead.pft
+	modified:   www/htdocs/iah/scripts/en/ahbbot.htm
+	modified:   www/htdocs/iah/scripts/en/ahbtop.htm
+	modified:   www/htdocs/iah/scripts/en/ahconf.htm
+	modified:   www/htdocs/iah/scripts/en/ahform.htm
+	modified:   www/htdocs/iah/scripts/en/ahhead.pft
+	modified:   www/htdocs/iah/scripts/en/ahindx1.htm
+	new file:   www/htdocs/iah/scripts/en/ahindx3.htm
+	modified:   www/htdocs/iah/scripts/en/ahrbot.htm
+	modified:   www/htdocs/iah/scripts/en/ahrnav.htm
+	modified:   www/htdocs/iah/scripts/en/ahrtop.htm
+	modified:   www/htdocs/iah/scripts/en/ahscad.htm
+	modified:   www/htdocs/iah/scripts/en/ahsend.htm
+#	modified:   www/htdocs/iah/scripts/en/cabec.htm
+	modified:   www/htdocs/iah/scripts/en/header.pft
+	modified:   www/htdocs/iah/scripts/en/header_close.pft
+#	modified:   www/htdocs/iah/scripts/en/query.pft
+#	modified:   www/htdocs/iah/scripts/es/ahbbot.htm
+#	modified:   www/htdocs/iah/scripts/es/ahbnav.htm
+#	modified:   www/htdocs/iah/scripts/es/ahbtop.htm
+#	modified:   www/htdocs/iah/scripts/es/ahconf.htm
+#	modified:   www/htdocs/iah/scripts/es/ahform.htm
+	modified:   www/htdocs/iah/scripts/es/ahhead.pft
+#	modified:   www/htdocs/iah/scripts/es/ahindx.htm
+#	modified:   www/htdocs/iah/scripts/es/ahrbot.htm
+#	modified:   www/htdocs/iah/scripts/es/ahrnav.htm
+#	modified:   www/htdocs/iah/scripts/es/ahrtop.htm
+#	modified:   www/htdocs/iah/scripts/es/ahscad.htm
+#	modified:   www/htdocs/iah/scripts/es/ahsend.htm
+#	modified:   www/htdocs/iah/scripts/es/cabec.htm
+#	modified:   www/htdocs/iah/scripts/es/header.pft
+#	modified:   www/htdocs/iah/scripts/fr/ahbbot.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahbnav.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahbtop.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahconf.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahform.htm
+	modified:   www/htdocs/iah/scripts/fr/ahhead.pft
+#	modified:   www/htdocs/iah/scripts/fr/ahindx.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahrbot.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahrnav.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahrtop.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahscad.htm
+#	modified:   www/htdocs/iah/scripts/fr/ahsend.htm
+#	modified:   www/htdocs/iah/scripts/fr/cabec.htm
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_1/3237t01.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_1/3237t02.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_1/back.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_1/down.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_1/text1.htm
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_1/text1.pdf
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_1/text2.htm
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_1/text2.pdf
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/3388i01.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/3388i01peq.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/3388i02.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/3388i02peq.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/3388i03.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/3388i03peq.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/back.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/down.gif
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/text1.htm
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/text1.pdf
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/text2.htm
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/text2.pdf
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/text3.htm
+#	new file:   www/htdocs/iah/scripts/fulltext/BJMBR/v32_2/text3.pdf
+#	new file:   www/htdocs/iah/scripts/highlight/ahbnav.htm
+#	new file:   www/htdocs/iah/scripts/highlight/ahbtop.htm
+#	new file:   www/htdocs/iah/scripts/highlight/ahfoot.pft
+#	new file:   www/htdocs/iah/scripts/highlight/ahform.htm
+#	new file:   www/htdocs/iah/scripts/highlight/ahhead.pft
+#	new file:   www/htdocs/iah/scripts/highlight/ahindx.htm
+#	new file:   www/htdocs/iah/scripts/highlight/header.pft
+#	new file:   www/htdocs/iah/scripts/highlight/highlight.js
+	modified:   www/htdocs/iah/scripts/iah-def-lin.php
+	modified:   www/htdocs/iah/scripts/iah-functions.xis
+#	deleted:    www/htdocs/iah/scripts/iah-lin.xis
+#	deleted:    www/htdocs/iah/scripts/iah-win.xis
+#	modified:   www/htdocs/iah/scripts/iah.def.php
+	modified:   www/htdocs/iah/scripts/iah.xis
+#	renamed:    www/htdocs/iah/scripts/iah.xis.old -> www/htdocs/iah/scripts/iah_ori.xis
+#	modified:   www/htdocs/iah/scripts/modules/search.xis
+#	modified:   www/htdocs/iah/scripts/pt/ahbbot.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahbnav.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahbtop.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahconf.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahform.htm
+	modified:   www/htdocs/iah/scripts/pt/ahhead.pft
+#	modified:   www/htdocs/iah/scripts/pt/ahindx.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahrbot.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahrnav.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahrtop.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahscad.htm
+#	modified:   www/htdocs/iah/scripts/pt/ahsend.htm
+#	modified:   www/htdocs/iah/scripts/pt/cabec.htm
+	modified:   www/htdocs/iah/scripts/si/ahhead.pft
+#	modified:   www/htdocs/iah/scripts/translate/ahbbot.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahbnav.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahbtop.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahconf.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahform.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahindx.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahrbot.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahrnav.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahrtop.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahscad.htm
+#	modified:   www/htdocs/iah/scripts/translate/ahsend.htm
+#	new file:   www/htdocs/iah/scripts/translate/am.txt
+#	modified:   www/htdocs/iah/scripts/translate/cabec.htm
+#	modified:   www/htdocs/iah/scripts/translate/en.txt
+#	modified:   www/htdocs/iah/scripts/translate/es.txt
+#	modified:   www/htdocs/iah/scripts/translate/fr.txt
+#	new file:   www/htdocs/iah/scripts/translate/nl.txt
+#	modified:   www/htdocs/iah/scripts/translate/pt.txt
+#	modified:   www/htdocs/iah/scripts/translate/si.txt
+#	modified:   www/htdocs/iah/scripts/translate/teste.txt
+#	new file:   www/htdocs/iah/scripts/translate/to_am.mst
+#	new file:   www/htdocs/iah/scripts/translate/to_am.xrf
+#	new file:   www/htdocs/iah/scripts/translate/to_si.mst
+#	new file:   www/htdocs/iah/scripts/translate/to_si.xrf
+#	new file:   www/htdocs/iah/scripts/translate/translate2am.sh
+#	new file:   www/htdocs/iah/scripts/translate/translate2nl.sh
+#	new file:   www/htdocs/iah/scripts/translate/translate2si.sh
+#	modified:   www/htdocs/iah/scripts/translate/translate_note.txt
+	modified:   www/htdocs/index.php
+	modified:   www/htdocs/indexmysite.php
+	modified:   www/htdocs/isis-oai-provider/oai-databases.php
+#	new file:   www/htdocs/isisws/changelog
+	modified:   www/htdocs/isisws/class.nusoap_base.php
+	modified:   www/htdocs/isisws/class.soap_fault.php
+	modified:   www/htdocs/isisws/class.soap_parser.php
+	modified:   www/htdocs/isisws/class.soap_server.php
+	modified:   www/htdocs/isisws/class.soap_transport_http.php
+	modified:   www/htdocs/isisws/class.soap_val.php
+	modified:   www/htdocs/isisws/class.soapclient.php
+	modified:   www/htdocs/isisws/class.wsdl.php
+	modified:   www/htdocs/isisws/class.wsdlcache.php
+	modified:   www/htdocs/isisws/class.xmlschema.php
+	modified:   www/htdocs/isisws/nusoap.php
+	modified:   www/htdocs/isisws/nusoapmime.php
+	modified:   www/htdocs/isisws/wxis.php
+	modified:   www/htdocs/secs-web/common/class/export.class.php
+	modified:   www/htdocs/secs-web/common/class/facic.class.php
+	modified:   www/htdocs/secs-web/common/class/library.class.php
+	modified:   www/htdocs/secs-web/common/class/mask.class.php
+	modified:   www/htdocs/secs-web/common/class/mytitle.class.php
+	modified:   www/htdocs/secs-web/common/class/pInterface.class.php
+	modified:   www/htdocs/secs-web/common/class/session.class.php
+	modified:   www/htdocs/secs-web/common/class/title.class.php
+	modified:   www/htdocs/secs-web/common/class/titleplus.class.php
+	modified:   www/htdocs/secs-web/common/class/users.class.php
+#	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/changelog
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.nusoap_base.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.soap_fault.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.soap_parser.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.soap_server.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.soap_transport_http.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.soap_val.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.soapclient.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.wsdl.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.wsdlcache.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/class.xmlschema.php
+#	new file:   www/htdocs/secs-web/common/plugins/nusoap/lib/db_isis.php
+#	new file:   www/htdocs/secs-web/common/plugins/nusoap/lib/directIsis.php
+#	new file:   www/htdocs/secs-web/common/plugins/nusoap/lib/isiswsdl.php
+	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/nusoap.php
+#	modified:   www/htdocs/secs-web/common/plugins/nusoap/lib/nusoapmime.php
+#	new file:   www/htdocs/secs-web/common/plugins/nusoap/lib/wxis.php
+	modified:   www/htdocs/secs-web/common/plugins/smarty/libs/sysplugins/smarty_internal_undefined.php
+#	deleted:    www/htdocs/secs-web/temp/templates_c/interface/07be07508d16a3f42befccf8d1785e1da5a14628_0.file.heading.tpl.php.php
+#	deleted:    www/htdocs/secs-web/temp/templates_c/interface/31d962bf9108255b34915f3fd5447c2d1ec89639_0.file.index.tpl.php.php
+#	deleted:    www/htdocs/secs-web/temp/templates_c/interface/57b23d438f5ddfbc9aa767d69a6e482073ea2b8c_0.file.header.tpl.php.php
+#	deleted:    www/htdocs/secs-web/temp/templates_c/interface/8938676f75099191df064ee74d9aee2d2fe52211_0.file.navigation.tpl.php.php
+#	deleted:    www/htdocs/secs-web/temp/templates_c/interface/9560a7da3b471085b1792e8991a429899c46b477_0.file.footer.tpl.php.php
+#	deleted:    www/htdocs/secs-web/temp/templates_c/interface/a71ba5824e06eefc4f66b8ce6d1bf2b0df6fe958_0.file.login.tpl.php.php
+	modified:   www/htdocs/site/php/head.php
+#
