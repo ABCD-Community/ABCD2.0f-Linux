@@ -1,4 +1,4 @@
-#ABCD2.0f Linux
+# ABCD2.0f Linux
 
 
 ## ABCD Linux 64 bits Version
@@ -30,7 +30,7 @@ The name itself already expresses the ambition of the software suite : not only 
 - adjust the bases.dat, abcd.def and the par-folder (for .par and .def files), knowing that the ABCD Debian installation package will copy all demo-databases to the bases-folder of ABCD while the existing databases are moved to 'bases_backup' in /var/opt/ABCD. So basically the idea is to 'merge' your database directories from the bases_backup with the new demo-directories in var/opt/bases, adding the new ones and preserving the ones already in use.
 - remember to set all htdocs directories to 775 and all bases-directories to 777
 
-# Instalation
+# Install
 
 Please read the following instructons carefully in order to get a working version of ABCD.
 
@@ -138,6 +138,8 @@ OR alternatively, once the 'service' for Apache is running in Windows, one can s
    so as to parse indeed different configuration files ofr Windows and Linux instead of the original and legacy-named 'bvs-site-conf.php'.
    As for the iAH module the default-paths are different in between Windows and Linux but both cases use the 'Unix-style' slashes,
    e.g. Windows :
+   
+   ```
    [ENVIRONMENT]
                 DIRECTORY=/site/
                 SITE_PATH=C:/ABCD/www/htdocs/site/
@@ -151,6 +153,7 @@ OR alternatively, once the 'service' for Apache is running in Windows, one can s
    SITE_PATH=/opt/ABCD/www/htdocs/site/
    DATABASE_PATH=/opt/ABCD/www/bases/site/
    SERVERNAME=localhost
+   ```
 
    * Site : the demo-Site needs still to be re-configured for your local situation :
        ** which databases are there,
