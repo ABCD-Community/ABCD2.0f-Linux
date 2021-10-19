@@ -1,0 +1,4 @@
+
+'<tr>','<td valign=top><font face=arial size=2>'v100+|; | if a(v100) then '&nbsp;' fi,'</td>'/
+'<td valign=top><font face=arial size=2>'v030+|; | if a(v030) then '&nbsp;' fi,'</td>'/
+'<td valign=top><font face=arial size=2>'v993+|; | if a(v993) then '&nbsp;' fi,'</td>'/

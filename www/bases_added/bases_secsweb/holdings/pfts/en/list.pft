@@ -1,0 +1,4 @@
+(if npost(|ID_|V30) > 0 then
+/'$$REF:title,list,ID_'v30+|$$|,fi,)/
+'MFN: 'mfn,
+'<br>'

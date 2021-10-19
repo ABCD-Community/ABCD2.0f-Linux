@@ -1,0 +1,28 @@
+'<table border=0 width=90%><font face=arial size=3><b>Title details</b></font>'
+(if npost(|ID_|V30) >0 then /'$$REF:title,short,ID_'v30, else if npost(|ID_|v30) < 1 then ' No title found', fi, fi)/
+'<p><font color=red><strong><HR></strong></font>'
+'<br>MFN:'mfn,'<br>',
+if p(v30) then '<tr><td width=30% valign=top><font face=arial size=2><b>Location no of Title</b></td><td valign=top><font face=arial size=2>'v30+|<br>|,'</td>' fi/
+if p(v1) then '<tr><td width=30% valign=top><font face=arial size=2><b>Database name</b></td><td valign=top><font face=arial size=2>'v1+|<br>|,'</td>' fi/
+if p(v5) then '<tr><td width=30% valign=top><font face=arial size=2><b>Control No. </b></td><td valign=top><font face=arial size=2>'v5+|<br>|,'</td>' fi/
+if p(v10) then '<tr><td width=30% valign=top><font face=arial size=2><b>Library</b></td><td valign=top><font face=arial size=2>'v10+|<br>|,'</td>' fi/
+
+if p(v900) then '<tr><td width=30% valign=top><font face=arial size=2><b>Notes</b></td><td valign=top><font face=arial size=2>'v900+|<br>|,'</td>' fi/
+
+if p(v911) or p(v912) or p(v913) then '<tr><td width=30% valign=top><font face=arial size=2><b>Year/Volume/Issue</b></td><td valign=top><font face=arial size=2>'v911,". - Vol. "v912,". - No. / Month: "v913+|<br>|'</td>' fi/
+if p(v914) then '<tr><td width=30% valign=top><font face=arial size=2><b>Presence</b></td><td valign=top><font face=arial size=2>'(if p(v914) then select v914 case 'P': ,'Present'/, case 'A': ,'Absent'/,  elsecase '???'/, endsel,if iocc<>nocc(v350) then '<br>' fi fi),'</td>' fi/
+
+if p(v915) then '<tr><td width=30% valign=top><font face=arial size=2><b>No of copies</b></td><td valign=top><font face=arial size=2>'v915+|<br>|,'</td>' fi/
+
+if p(v916) then '<tr><td width=30% valign=top><font face=arial size=2><b>Type</b></td><td valign=top><font face=arial size=2>'v916+|<br>|,'</td>' fi/
+
+if p(v910) then '<tr><td width=30% valign=top><font face=arial size=2><b>Mask Code</b></td><td valign=top><font face=arial size=2>'v910+|<br>|,'</td>' fi/
+if p(v920) then '<tr><td width=30% valign=top><font face=arial size=2><b>Calculate next issue</b></td><td valign=top><font face=arial size=2>'v920+|<br>|,'</td>' fi/
+if p(v940) then '<tr><td width=30% valign=top><font face=arial size=2><b>Date added</b></td><td valign=top><font face=arial size=2>'v940*6.2,"-"v940*4.2,"-"v940*0.4|<br>|,'</td>' fi/
+if p(v941) then '<tr><td width=30% valign=top><font face=arial size=2><b>Date amended</b></td><td valign=top><font face=arial size=2>'v941*6.2,"-"v941*4.2,"-"v941*0.4|<br>|,'</td>' fi/
+(if p(v950) then '<tr><td width=30% valign=top><font face=arial size=2><b>Added by</b></td><td valign=top><font face=arial size=2>'v950+|<br>|,'</td>' fi)/
+(if p(v951) then '<tr><td width=30% valign=top><font face=arial size=2><b>Amended by</b></td><td valign=top><font face=arial size=2>'v951^o,| - |v951^d+|<br>|,'</td>' fi)/
+
+'</table><p>'
+
+

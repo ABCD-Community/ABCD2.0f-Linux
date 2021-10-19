@@ -1,0 +1,4 @@
+30:if a(v030) then 'ID no missing' else if a(v3333) then proc('a3333~'f(mfn,1,0)'~') fi, if val(v3333)=0 then if l(['title']|ID_|v030) <> 0 then  'ID no already exists in MFN ',f(l(['title']|ID_|v030),1,0), fi fi fi$$|$$false
+###
+:
+###

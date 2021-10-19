@@ -1,0 +1,38 @@
+This tool allows to create, for one journal, the holdings record in the holdings-database.
+Normally the Secs-Web scripts run this process themselves, skipping this shortcut launching-command but using dynamic variables instead of the hard-coded
+path-variables (e.g. database to update) from the interaction with the user, defining which library, which journal etc.
+
+For this manual creation of the holdings records to work correctly, the following instructions have to be observed :
+
+1. create a writable folder 'holdingsTemp' in the bases-folder of your Secs-Web database, default (for Linux) : /var/opt/ABCD/bases/secsweb/holdingsTemp
+This folder will contain, in the main sub-folder 'hldgCompacted', a series of temporary but necessary database-files in time-stamped sub-folders for each
+journal ID processed, and in the main subfolder 'hldgCompacted_logs' a single log-file for each journal ID.
+
+2. check, and if necessary adjust, the paths of the main parameters at the beginning of the script 'shortcut.sh' (or shortcut.bat for Windows), e.g.
+THIS_CISIS=/opt/ABCD/www/cgi-bin/ansi/
+FACIC=/var/opt/ABCD/bases/secs-web/main/facic
+THIS_PATH=/opt/ABCD/www/htdocs/secs-web/hldgModule
+THIS_TMP_PATH=/opt/ABCD/www/htdocs/secs-web/hldgModule
+HLDG=/var/opt/ABCD/bases/secs-web/main/holdings
+TITLE=/var/opt/ABCD/bases/secs-web/title
+
+Obviously these paths need to be matching the real situation and can be adjusted accordingly, but the ones given here in the default application are o.k.
+for a default ABCD Linux installation.  Also note that the example paths are for the 'main' database, so change the 'main' part of the path for the name of
+the actual database you are working on, e.g. 'fagro'.
+
+3. open a terminal in the directory htdocs/secs-web/hldgModule/lin, which contains the necessary shell-scripts.
+
+4. make all scripts 'executable' with the command : chmod +x *, or if you are not super-user : sudo chmod +x *
+
+5. if you want timing recorded (for management purposes but normally not necessary...), remove the leading '#' in the 2nd line of the script
+registerTime.sh. The resulting file 'registerTime.txt' can be used as a log-file but grows fast, so needs cleaning regularly.
+
+6. finally run the script 'shortcut.sh' which starts the whole process, which defines the paths and then runs the other scripts, resulting in an updated
+database 'holdings' in your Secs-Web bases-folder.  E.g. the command :
+./shortcut 001
+will update the holdings-database, creating if not yet there and indexing the record for the journal with ID 001 (in v30 of Title).
+So this command has to be repeated for each journal for which you need the holdings summary.
+
+Egbert de Smet
+Universiteit Antwerpen
+March 2019

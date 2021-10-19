@@ -1,0 +1,12 @@
+if p(v30) then '<br><font face=arial size=2><b>ID no.</b>: <font face=arial size=2>'v30+|; |, fi/
+if p(v100) then '<br><font face=arial size=2><b>Title</b>: <font face=arial size=2>'v100+|; |, fi/
+
+if p(v301) then '<br><font face=arial size=2><b>Initial year</b>: <font face=arial size=2>'v301+|; |, fi/
+if p(v302) then '<br><font face=arial size=2><b>Initial volume</b>: <font face=arial size=2>'v302+|; |, fi/
+if p(v303) then '<br><font face=arial size=2><b>Initial issue</b>: <font face=arial size=2>'v303+|; |, fi/
+if p(v304) then '<br><font face=arial size=2><b>Final year</b>: <font face=arial size=2>'v304+|; |, fi/
+if p(v305) then '<br><font face=arial size=2><b>Final volume</b>: <font face=arial size=2>'v305+|; |, fi/
+if p(v306) then '<br><font face=arial size=2><b>Final issue</b>: <font face=arial size=2>'v306+|; |, fi/
+if p(v460) then '<br><font face=arial size=2><b>Mask</b>: <font face=arial size=2>'v460+|; |, fi/
+
+'<P>'/

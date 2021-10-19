@@ -1,0 +1,17 @@
+F|30|ID no of Title|1|1|||X|||D|title|TI_|@authors.pft|||0||1|0|||
+F|900|Notes|0|1|||X|2|100|||||||0||0|0|||
+F|910|Mask|0|0|||X|2|100|D|mask|NOM=|v801,x2,v900^*[1]|v801,x3,v900^*[1]||0||0|0|||
+F|911|Year|0|1|||ISO|||||||||0||0|0|||
+F|912|Volume number|0|1|||X|||||||||0||0|0|||
+F|913|Issue number|0|1|||X|||||||||0||0|0|||
+F|914|Present or absent|0|0|||S|||P|presence.tab|||||0||0|0|||
+F|915|Quantity|0|0|||X|1|5||||||1|0||0|0|I||
+F|916|Type|0|1|||C|||P|type.tab|||||0||1|0|||
+F|1|Database name|0|0|||X||||||||FACIC|0||0|0|||
+F|10|Library|0|0|||X||||||||NSS|0||0|0|||
+F|920|Calculate next issue|0|0|||X|||||||||0||0|0|||
+F|940|Date added|0|0|||ISO|||||||||0||0|0|||
+F|950|Added by|0|1|||X|2||||||||0||0|0|||
+F|941|Date amended|0|0|||ISO|2||||||||0||0|0|||
+F|951|Amended by|0|1|||OD|2||||||||0||0|0|||
+F|200|Title|0|0|||X|2|100|D|title|ID_|v100|v100||0||0|0|||

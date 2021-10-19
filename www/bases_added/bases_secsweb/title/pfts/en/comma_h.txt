@@ -1,0 +1,6 @@
+ID number 1
+Title of journal
+Initial year
+Final Year
+Final Volume
+Final issue

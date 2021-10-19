@@ -1,0 +1,6 @@
+(if npost(|ID_|V30) = 0 then
+/'$$REF:title,short,ID_'v30+|$$|, fi,)/
+
+mfn,'|',v30,'|',v993/
+
+

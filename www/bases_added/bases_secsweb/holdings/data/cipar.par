@@ -1,0 +1,5 @@
+facic.*=/var/opt/ABCD/bases/facic/data/facic.*
+title.*=/var/opt/ABCD/bases/title/data/title.*
+mask.*=/var/opt/ABCD/bases/title/data/mask.*
+holdings.*=/var/opt/ABCD/bases/holdings/data/holdings.*
+

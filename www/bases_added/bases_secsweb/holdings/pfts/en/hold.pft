@@ -1,0 +1,10 @@
+'<table border=0 width=90%>'
+(if npost(|TIT_|V30) >0 then
+/'$$REF:title,short,ID_'v30+|$$|,fi,)/
+'<p><HR>'
+
+'HOLD MFN: 'mfn,'<br>'/
+if p(v30) then '<tr><td width=20% valign=top><font face=arial size=2><b>ID no</b></td><td valign=top><font face=arial size=2>'v30+|<br>|,'</td>' fi/
+if p(v970) then '<tr><td width=20% valign=top><font face=arial size=2><b>Summary holdings HOLD database</b></td><td valign=top><font face=arial size=2>'v970+|<br>|,'</td>' fi/
+
+'</table><p>'

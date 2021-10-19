@@ -1,0 +1,9 @@
+'<table border=0 width=90%>'
+
+if p(v30) then '<font size=3><b>Title: </b>' /ref->title(l->title('ID_'v30),v100,'<br>Shelf No: ' v993,'<br>Status: ',if v50='C' then 'Current' 
+ else if v50='D' then 'Discontinued' else if v50='U' then 'Unknown' fi,fi,fi), fi/ '</font><br>'
+'<p><HR>'
+
+if p(v30) then '<tr><td width=20% valign=top><font face=arial size=2><b>Title Code</b></td><td valign=top><font face=arial size=2>'v30+|<br>|,'</td>' fi/
+(if p(v970) then '<tr><td width=20% valign=top><font face=arial size=2><b>Holdings</b></td><td valign=top><font face=arial size=2>'v970+|<br>|,'</td>' fi/)
+'</table><p>'

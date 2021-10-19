@@ -1,0 +1,15 @@
+facic.*=%path_database%facic/data/facic.*
+title.*=%path_database%title/data/title.*
+mask.*=%path_database%title/data/mask.*
+holdings.*=%path_databases%holdings/data/holdings.*
+facic.pft=%path_database%facic/pfts/en/facic.pft
+title.pft=%path_database%facic/pfts/en/title.pft
+holdings.pft=%path_database%holdings/pfts/en/holdings.pft
+hold.pft=%path_database%holdings/pfts/en/hold.pft
+mask.pft=%path_database%title/pfts/en/data/mask.pft
+authors.pft=%path_database%title/pfts/en/authors.pft
+prologoact.pft=%path_database%www/prologoact.pft
+epilogoact.pft=%path_database%www/epilogoact.pft
+isisac.tab=%path_database%isisac.tab
+isisuc.tab=%path_database%isisuc.tab
+

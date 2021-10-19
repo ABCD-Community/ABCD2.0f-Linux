@@ -1,0 +1,16 @@
+Create the holdings database
+
+Open command line
+Move to c:\abcd\www\bases\title\data
+cd \abcd\www\bases\title\data
+
+type:
+mx title "pft=v30/" now -all >title.list
+to create a list of the titles with only the ID number (tag 30)
+
+copy the resulting file title.list to the directory c:\abcd\www\htdocs\secs-web\hdlChronOrder\win
+
+in that directory run the command (in the terminal) 
+php createHoldings.php
+and it will show the progress of creating the holdings on your terminal-screen.
+

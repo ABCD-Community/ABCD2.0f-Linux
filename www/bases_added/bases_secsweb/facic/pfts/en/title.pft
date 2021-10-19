@@ -1,0 +1,2 @@
+/*if npost(|ID_|v30) >0 then (ref->title(l->title(|ID_|v30),v100)) else  ' No title found' fi/ */
+ref->title(l->title(|ID_|v30),v100)

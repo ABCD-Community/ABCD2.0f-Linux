@@ -1,0 +1,7 @@
+facic.*=%path_database%holdings/data/holdings.*
+facic.pft=%path_database%holdings/pfts/%lang%/holdings.pft
+prologoact.pft=%path_database%www/prologoact.pft
+epilogoact.pft=%path_database%www/epilogoact.pft
+
+
+

@@ -1,0 +1,20 @@
+'<table border=0 width=90%>'
+if p(v1) then '<tr><td width=30% valign=top><font face=arial size=2><b>Database name</b></td><td valign=top><font face=arial size=2>'v1+|<br>|,'</td>' fi/
+if p(v5) then '<tr><td width=30% valign=top><font face=arial size=2><b>S??</b></td><td valign=top><font face=arial size=2>'v5+|<br>|,'</td>' fi/
+if p(v6) then '<tr><td width=30% valign=top><font face=arial size=2><b>F??</b></td><td valign=top><font face=arial size=2>'v6+|<br>|,'</td>' fi/
+if p(v10) then '<tr><td width=30% valign=top><font face=arial size=2><b>Library in secs-web</b></td><td valign=top><font face=arial size=2>'v10+|<br>|,'</td>' fi/
+if p(v30) then '<tr><td width=30% valign=top><font face=arial size=2><b>ID no of Title</b></td><td valign=top><font face=arial size=2>'v30+|<br>|,'</td>' fi/
+if p(v910) then '<tr><td width=30% valign=top><font face=arial size=2><b>Mask code</b></td><td valign=top><font face=arial size=2>'v910+|<br>|,'</td>' fi/
+if p(v911) then '<tr><td width=30% valign=top><font face=arial size=2><b>Year</b></td><td valign=top><font face=arial size=2>'v911+|<br>|,'</td>' fi/
+
+if p(v912) then '<tr><td width=30% valign=top><font face=arial size=2><b>Issue??</b></td><td valign=top><font face=arial size=2>'v912+|<br>|,'</td>' fi/
+if p(v913) then '<tr><td width=30% valign=top><font face=arial size=2><b>Number of volume</b></td><td valign=top><font face=arial size=2>'v913+|<br>|,'</td>' fi/
+if p(v914) then '<tr><td width=30% valign=top><font face=arial size=2><b>Present or absent</b></td><td valign=top><font face=arial size=2>'v914+|<br>|,'</td>' fi/
+if p(v915) then '<tr><td width=30% valign=top><font face=arial size=2><b>Issue</b></td><td valign=top><font face=arial size=2>'v915+|<br>|,'</td>' fi/
+if p(v920) then '<tr><td width=30% valign=top><font face=arial size=2><b>Calculate next issue</b></td><td valign=top><font face=arial size=2>'v920+|<br>|,'</td>' fi/
+if p(v940) then '<tr><td width=30% valign=top><font face=arial size=2><b>Date added</b></td><td valign=top><font face=arial size=2>'v940+|<br>|,'</td>' fi/
+'xxxxx'
+(if npost(|ID_|V30) >0 then
+/'$$REF:holdings,hold,TIT_'v30/
+   fi,)
+'---'/'$$REF:holdings,hold,TIT_'v30+|$$|/

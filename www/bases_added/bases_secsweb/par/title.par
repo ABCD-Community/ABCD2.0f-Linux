@@ -1,0 +1,7 @@
+title.*=/var/opt/ABCD/bases_secsweb/title/data/title.*
+title.pft=%path_database%title/pfts/%lang%/title.pft
+prologoact.pft=%path_database%www/prologoact.pft
+epilogoact.pft=%path_database%www/epilogoact.pft
+
+
+

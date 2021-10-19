@@ -1,0 +1,4 @@
+'<table border=0 width=90%>'
+if p(v801) then '<tr><td width=10% valign=top><font face=arial size=2><b>Code mask </b></td><td valign=top><font face=arial size=2>'v801+|<br>|,'</td>' fi/
+if p(v900) then '<tr><td width=10% valign=top><font face=arial size=2><b>Description </b></td><td valign=top><font face=arial size=2>'v900[1]+|<br>|,'</td>' fi/
+'</table><p>'

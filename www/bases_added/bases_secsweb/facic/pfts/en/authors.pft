@@ -1,0 +1,9 @@
+select e3
+
+                 case 100:v100'$$$'v100
+                 case 30:v30'$$$'v30,x2,v100
+                 case 910:v910'$$$'v910
+                 case 78:v78'$$$'if e4=1 then f(mfn,1,0) else v78 fi
+                 case 20:v20'$$$'if e4=1 then f(mfn,1,0) else v20 fi
+endsel
+  

@@ -1,0 +1,14 @@
+(if npost(|ID_|V30) >0 then
+/'$$REF:title,short,ID_'v30+|$$|,fi,)/
+'MFN: 'mfn,
+'<p><HR>'
+
+'<table border=0 width=90%>'
+
+'<tr><td width=20% valign=top><font face=arial size=2><b>MFN: </b></td><td valign=top><font face=arial size=2>'mfn,'<br></td>'/
+
+if p(v30) then '<tr><td width=20% valign=top><font face=arial size=2><b>ID. no</b></td><td valign=top><font face=arial size=2>'v30+|<br>|,'</td>' fi/
+if p(v970) then '<tr><td width=20% valign=top><font face=arial size=2><b>Summary holdings</b></td><td valign=top><font face=arial size=2>'v970+|<br>|,'</td>' fi/
+
+if p(v700) then '<tr><td width=20% valign=top><font face=arial size=2><b>Issues of title</b></td><td valign=top><font face=arial size=2>'(v700^a,|-Vol. |v700^v,|-No. |v700^n,|-Status: |v700^s+|<br>|/),'</td>', fi, /
+'</table><p>'

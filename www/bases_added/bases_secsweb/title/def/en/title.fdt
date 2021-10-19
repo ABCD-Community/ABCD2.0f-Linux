@@ -1,0 +1,40 @@
+F|001|Database |0|0|||X||||||||TITLE|0||0|0|||
+F|010|Database secs-web(main)|0|0|||X||||||||main|0||0|0|||
+F|030|ID number 1|0|0|||XF|1|10|||ID_||||0||0|1|||
+F|037|Control Number|0|0|||AI|||||||||0||0|0|||
+F|993|Location|0|1|||X|||D|title|LOC_|v993|v993||0||0|0|||
+F|50|Status|0|0|||C|4|5|P|status.tab|||||0||0|0|||
+F|100|Title of journal|1|0|||X|2|150|||TI_||||0||0|1|||
+F|098|Summary holdings|0|1|||X|3|100|||||||0||0|0|||
+F|110|Sub title|0|0|||X|||||||||0||0|0|||
+F|120|Section/Part|0|0|||X|||||||||0||0|0|||
+F|140|Issuing body|0|1|||X|||||||||0||0|0|||
+F|149|Other ttile|0|1|||X|||||||||0||0|0|||
+F|150|Key title|0|1|||X|||||||||0||0|0|||
+F|180|Title abbreviated|0|1|||X|||||||||0||0|0|||
+F|301|Initial year|0|0|||X|||||||||0||0|1|||
+F|302|Initial volume|0|0|||X|||||||||0||0|0|||
+F|303|Initial issue|0|0|||X|||||||||0||0|0|||
+F|304|Final Year|0|0|||X|||||||||0||0|0|||
+F|305|Final Volume|0|0|||X|||||||||0||0|0|||
+F|306|Final issue|0|0|||X|||||||||0||0|0|||
+F|310|Country|0|0|||X|||D|title|CC_|v310|v310||0||0|0|||
+F|330|Level of publication|0|0|||S|||P|level.tab|||||0||0|0|||
+F|340|Alphabet|0|0|||X||||||||A|0||0|0|||
+F|350|Language text|0|1|||S|10|20|P|language.tab|||||0||0|0|||
+F|360|Language abstract|0|1|||S|10|20|P|language.tab|||||0||0|0|||
+F|380|Frequency|0|1|||S|10|20|P|frequency.tab|||||0||0|0|||
+F|400|ISSN|0|1|||X|||||||||0||0|0|||
+F|440|Descriptors/Subjects|0|1|||X|||D|title|DE_|v440|v440||0||0|0|||
+F|460|Mask|0|0|||X|||D|mask|NOM=|v801,x2,v900^*[1]|v801,x3,v900^*[1]||0||0|0|||
+F|480|Publisher|0|1|||X|||||||||0||0|0|||
+F|490|Place|0|0|||X|||||||||0||0|0|||
+F|610|Title - Variant|0|0|||X|||||||||0||0|0|||
+F|612|WWW link|0|1|||X|2|200|||||||0||0|0|||
+H||Administrative info|0|0||||||||||||0||0|0|||
+F|900|Notes|0|1|||X|1|100|||||||0||0|0|||
+F|903|Received in exchange of|0|0|||X|||||||||0||0|0|||
+F|940|Date added|0|0|||ISO|2||||||||0||0|1|||
+F|941|Date amended|0|0|||ISO|1||||||||0||0|0|||
+F|950|Created by|0|0|||OC|||||||||0||0|0|||
+F|951|Updated by|0|0|||OC|1|1|||||||0||0|0|||

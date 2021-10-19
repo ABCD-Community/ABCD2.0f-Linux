@@ -1,0 +1,59 @@
+'<table border=0 width=90%>'
+'MFN:',mfn,'<br>'
+if p(v993) then '<tr><td width=20% valign=top><font face=arial size=2><b>Shelf No</b></td><td valign=top><font face=arial size=2>'v993+|<br>|,'</td>' fi/
+if p(v20) then '<tr><td width=20% valign=top><font face=arial size=2><b>ISSN</b></td><td valign=top><font face=arial size=2>'v20+|<br>|,'</td>' fi/
+if p(v30) then '<tr><td width=20% valign=top><font face=arial size=2><b>ID no 1</b></td><td valign=top><font face=arial size=2>'v30+|<br>|,'</td>' fi/
+if p(v37) then '<tr><td width=20% valign=top><font face=arial size=2><b>Control no</b></td><td valign=top><font face=arial size=2>'v37+|<br>|,'</td>' fi/
+if p(v100) then '<tr><td width=20% valign=top><font face=arial size=2 color="#000080"><b>Title</b></td><td valign=top><font face=arial size=3 color="#000080">'v100+|<br>|,'</td>' fi/
+if p(v50) then '<tr><td width=20% valign=top><font face=arial size=2><b>Status</b></td><td valign=top><font face=arial size=2>'(if p(v50) then select v50 case 'C': ,'Current'/, case 'D': ,'Discontinued'/, case 'U': ,'Unknown'/, elsecase '???'/, endsel,if iocc<>nocc(v350) then '<br>' fi fi),'</td>' fi/
+
+if p(v110) then '<tr><td width=20% valign=top><font face=arial size=2><b>Sub Title</b></td><td valign=top><font face=arial size=2>'v110+|<br>|,'</td>' fi/
+if p(v120) then '<tr><td width=20% valign=top><font face=arial size=2><b>Section/Part</b></td><td valign=top><font face=arial size=2>'v120+|<br>|,'</td>' fi/
+
+if p(v140) then '<tr><td width=20% valign=top><font face=arial size=2><b>Issuing body</b></td><td valign=top><font face=arial size=2>'v140+|<br>|,'</td>' fi/
+if p(v150) then '<tr><td width=20% valign=top><font face=arial size=2><b>Key title</b></td><td valign=top><font face=arial size=2>'v150+|<br>|,'</td>' fi/
+if p(v180) then '<tr><td width=20% valign=top><font face=arial size=2><b>Title abbreviated</b></td><td valign=top><font face=arial size=2>'v180+|<br>|,'</td>' fi/
+if p(v240) then '<tr><td width=20% valign=top><font face=arial size=2><b>Journal ?</b></td><td valign=top><font face=arial size=2>'v240+|<br>|,'</td>' fi/
+if p(v301) then '<tr><td width=20% valign=top><font face=arial size=2><b>Initial year</b></td><td valign=top><font face=arial size=2>'v301+|<br>|,'</td>' fi/
+if p(v302) then '<tr><td width=20% valign=top><font face=arial size=2><b>Initial volume</b></td><td valign=top><font face=arial size=2>'v302+|<br>|,'</td>' fi/
+if p(v303) then '<tr><td width=20% valign=top><font face=arial size=2><b>Initial volume</b></td><td valign=top><font face=arial size=2>'v303+|<br>|,'</td>' fi/
+
+if p(v304) then '<tr><td width=20% valign=top><font face=arial size=2><b>Final year</b></td><td valign=top><font face=arial size=2>'v304+|<br>|,'</td>' fi/
+if p(v305) then '<tr><td width=20% valign=top><font face=arial size=2><b>Final volume</b></td><td valign=top><font face=arial size=2>'v305+|<br>|,'</td>' fi/
+if p(v306) then '<tr><td width=20% valign=top><font face=arial size=2><b>Final issue</b></td><td valign=top><font face=arial size=2>'v306+|<br>|,'</td>' fi/
+if p(v480) then '<tr><td width=20% valign=top><font face=arial size=2><b>Publisher</b></td><td valign=top><font face=arial size=2>'v480+|<br>|,'</td>' fi/
+if p(v490) then '<tr><td width=20% valign=top><font face=arial size=2><b>Place</b></td><td valign=top><font face=arial size=2>'v490+|<br>|,'</td>' fi/
+if p(v610) then '<tr><td width=20% valign=top><font face=arial size=2><b>Other Title </b></td><td valign=top><font face=arial size=2>'v610+|<br>|,'</td>' fi/
+if p(v612) then '<tr><td width=30% valign=top><font face=arial size=2><b>WWW Link</b></td><td valign=top><font face=arial size=2>'(if p(v612) then '<a href="'/v612'">'/v612,/'</a><br></td>', if iocc<>nocc(v612) then '<br>' fi fi/),'</td>' fi/
+if p(v650) then '<tr><td width=20% valign=top><font face=arial size=2><b>Other titles</b></td><td valign=top><font face=arial size=2>'v650+|<br>|,'</td>' fi/
+if p(v800) then '<tr><td width=20% valign=top><font face=arial size=2><b>800</b></td><td valign=top><font face=arial size=2>'v800+|<br>|,'</td>' fi/
+if p(v900) then '<tr><td width=20% valign=top><font face=arial size=2><b>Notes</b></td><td valign=top><font face=arial size=2>'v900+|<br>|,'</td>' fi/
+if p(v903) then '<tr><td width=20% valign=top><font face=arial size=2><b>In exchange of: </b></td><td valign=top><font face=arial size=2>'v903+|<br>|,'</td>' fi/
+if p(v98) then '<tr><td width=20% valign=top><font face=arial size=2><b>Holdings</b></td><td valign=top><font face=arial size=2>'v98+|<br>|,'</td>' fi/
+if p(v310) then '<tr><td width=20% valign=top><font face=arial size=2><b>Country</b></td><td valign=top><font face=arial size=2>'v310+|<br>|,'</td>' fi/
+if p(v330) then '<tr><td width=20% valign=top><font face=arial size=2><b>Level</b></td><td valign=top><font face=arial size=2>'(if p(v330) then select v330 case 'CT': ,'Academic'/, case 'BI': ,'Community'/, elsecase '???'/, endsel,if iocc<>nocc(v330) then '<br>' fi fi),'</td>' fi/
+if p(v340) then '<tr><td width=20% valign=top><font face=arial size=2><b>Alphabet</b></td><td valign=top><font face=arial size=2>'(if p(v340) then select v340 case 'A': ,'Extended Roman'/, elsecase '???'/, endsel,if iocc<>nocc(v340) then '<br>' fi fi),'</td>' fi
+if p(v350) then '<tr><td width=20% valign=top><font face=arial size=2><b>Text language</b></td><td valign=top><font face=arial size=2>'(if p(v350) then select v350 case 'En': ,'English'/, case 'De': ,'German'/, case 'Af': ,'Afrikaans'/, case 'Fr': ,'French'/,  case 'en': ,'English'/,  case 'de': ,'German'/,  case 'po': ,'Portuguese'/, case 'af': , 'Afrikaans'/  elsecase '???'/, endsel,if iocc<>nocc(v350) then '<br>' fi fi),'</td>' fi/
+if p(v360) then '<tr><td width=20% valign=top><font face=arial size=2><b>Abstract  language</b></td><td valign=top><font face=arial size=2>'(if p(v360) then select v350 case 'En': ,'English'/, case 'De': ,'German'/, case 'af': ,'Afrikaans'/, case 'Fr': ,'French'/,  case 'en': ,'English'/,  case 'de': ,'German'/,  case 'po': ,'Portuguese'/ case 'af': , 'Afrikaans'/ elsecase '???'/, endsel,if iocc<>nocc(v360) then '<br>' fi fi),'</td>' fi/
+if p(v360) then '<tr><td width=20% valign=top><font face=arial size=2><b>Language abstract</b></td><td valign=top><font face=arial size=2>'v360+|<br>|,'</td>' fi/
+if p(v380) then '<tr><td width=20% valign=top><font face=arial size=2><b>Frequency</b></td><td valign=top><font face=arial size=2>'(if p(v380) then select v380 case 'A': ,'Annual'/, case 'M': ,'Monthly'/, case 'Q': ,'Quarterly'/, case 'U': ,'Unknown'/,  case 'F': ,'Semi annual'/,  case 'B': ,'Bimonthly'/,  case 'K': ,'Irregular'/, case 'D': ,'Daily'/, case 'S': ,'Semi monthly'/, case 'Z': ,'Other frequencies'/, elsecase '???'/, endsel,if iocc<>nocc(v380) then '<br>' fi fi),'</td>' fi/
+if p(v400) then '<tr><td width=20% valign=top><font face=arial size=2><b>ISSN</b></td><td valign=top><font face=arial size=2>'v400+|<br>|,'</td>' fi/
+if p(v440) then '<tr><td width=20% valign=top><font face=arial size=2><b>Subject </b></td><td valign=top><font face=arial size=2>'v440+|<br>|,'</td>' fi/
+if p(v450) then '<tr><td width=20% valign=top><font face=arial size=2><b>Abstracting services</b></td><td valign=top><font face=arial size=2>'v450+|<br>|,'</td>' fi/
+if p(v460) then '<tr><td width=20% valign=top><font face=arial size=2><b>Mask code</b></td><td valign=top><font face=arial size=2>'v460+|<br>|,'</td>' fi/
+
+if p(v460) then '<tr><td width=20% valign=top><font face=arial size=2><b>Mask</b></td><td valign=top><font face=arial size=2>'(if p(v460) then select v460 case 'A1A': ,'Annual: 1 vol per year, Identified by year'/, case 'A1F': ,'Annual'/, case 'A1V': ,'   Annual: 1 volume a year, without issue numbering'/, case 'F1V2F': ,'Semiannual: 1 volume a year, 2 issues per volume'/,  case 'F': ,'Semi annual'/,  case 'B': ,'Bimonthly'/,  case 'K': ,'Irregular'/, case 'D': ,'Daily'/, case 'S': ,'Semi monthly'/, case 'M2V6F': , 'Monthly: 2 volumes a year, 6 issues per volume'/, case 'Z': ,'Other frequencies'/, elsecase '???'/, endsel,if iocc<>nocc(v460) then '<br>' fi fi),'</td>' fi/
+
+if p(v1) then '<tr><td width=20% valign=top><font face=arial size=2><b>Database</b></td><td valign=top><font face=arial size=2>'v1+|<br>|,'</td>' fi/
+
+if p(v3) then '<tr><td width=20% valign=top><font face=arial size=2><b>Database</b></td><td valign=top><font face=arial size=2>'v3+|<br>|,'</td>' fi/
+if p(v10) then '<tr><td width=20% valign=top><font face=arial size=2><b>Database secs-web</b></td><td valign=top><font face=arial size=2>'v10+|<br>|,'</td>' fi/
+
+if p(v940) then '<tr><td width=20% valign=top><font face=arial size=2><b>Date added</b></td><td valign=top><font face=arial size=2>'v940*6.2,"-"v940*4.2,"-"v940*0.4+|<br>|,'</td>' fi/
+if p(v941) then '<tr><td width=20% valign=top><font face=arial size=2><b>Date amended</b></td><td valign=top><font face=arial size=2>'v941*6.2,"-"v941*4.2,"-"v941*0.4+|<br>|'</td>' fi/
+
+(if p(v950) then '<tr><td width=30% valign=top><font face=arial size=2><b>Added by</b></td><td valign=top><font face=arial size=2>'v950|<br>|,'</td>' fi)/
+(if p(v951) then '<tr><td width=30% valign=top><font face=arial size=2><b>Amended by</b></td><td valign=top><font face=arial size=2>'v951^o,| - |v951^d+|<br>|,'</td>' fi)/'</table>'
+(if npost(|ID_|V30) >0 then
+/'$$REF:holdings,hold,ID_'v30+|$$|, else 'No holdings' fi,)/
+
